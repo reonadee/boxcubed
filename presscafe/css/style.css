@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+img {
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+header {
+    background-image: url("../images/main_banner.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+header img {
+    width: 300px;
+    margin: 10px 0 0 30px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 96px;
+    font-weight: 800;
+    color: #88EBF2;
+    margin: 0;
+}
+
+header h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 40px;
+    margin: 0;
+}
+
+#blurb {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+
+
+main {
+    background-color: #DDD9D8;
+    padding-bottom: 50px; 
+}
+
+.section-title {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 30px;
+    margin: 0;
+}
+
+#services {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 50px; 
+}
+
+.card {
+    width: 300px;
+    float: left;
+    margin-left: 30px;
+}
+
+.card:first-child {
+    margin-left: 0px;
+}
+
+.card h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer {
+    background-color: #89D8E0;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-left {
+    text-align: left;
+    width: 40%;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    color: #008C95;
+    font-family: 'Lora', serif;
+    margin-left: 30px;
+}
+
+.footer-right {
+    text-align: left;
+    width: 55%;
+    font-size: 12px;
+}
+
+.footer-right .bold {
+    font-weight: bold;
+}
+
+.footer-locations {
+    display: flex;
+    justify-content: space-between; /* Space the images out */
+    margin-top: 10px;
+}
+
+.location {
+    text-align: center;
+    width: 48%; /* Ensure that images don't merge */
+}
+
+.location img {
+    width: 100%; /* Make sure images take full width of the container */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Now we make sure that the nav is below the map images */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px; /* Space between map images and the nav */
+    text-align: center;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.footer-nav a:hover {
+    color: white;
+}
+
+.subfooter {
+    background-color: #5FA8A8;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.footer-subtext {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.footer-dev {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    margin-right: 30px;
+}
