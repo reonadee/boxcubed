@@ -1,0 +1,693 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Open Sans',sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+
+/*Defined Colours from Bigsky*/
+color-gray-light-1:#F5F5F5; /* whitesmoke */
+
+color-gray-dark-1:#DDD;
+color-gray-dark-2:#AAA;
+color-gray-dark-3:#999;
+color-gray-dark-4:#555;
+color-gray-dark-5:#333;
+
+color-green-1:#008000; /*green*/
+color-green-2:#6B8E23; /*olivedrab*/
+
+color-yellow:#FFD700; /*gold*/
+
+color-red-1:#FF4500; /*orangered*/
+color-red-2:#B22222; /*firebrick*/
+
+/*body*/
+body {
+	font weight: 300;
+	font-family: sans-serif;
+	color: #333;
+	font-size: 14px;
+}
+/*header*/
+.header {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo {
+	width: 60px;
+	margin: 5px 0;
+}
+
+.org-name {
+	align-self: center;
+	margin-right: auto;
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: 400;
+	color:green;
+}
+
+.nav {
+	display:inline-flex;
+	align-items: stretch;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar-item {
+	list-style: none;
+	padding: 0 20 px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 20px;
+	cursor:pointer;
+}
+
+.navbar-item img {
+	width: 20px;
+	height: 20px;
+	margin-top: 14px;
+	filter:opacity(.5);
+}
+
+.navbar-item span{
+	text-transform:lowercase;
+	font-weight:500;
+	color:#AAA;
+}
+.navbar-item:hover, .navbar-item.activepage{
+	background:gold;
+}
+
+/*RECIPE TAB 🟢🟢🟢🟢🟢 */
+.recipe{
+	background-color:olivedrab;
+	color: white;
+	padding: 0 0 0 20px;
+	font-size: 14px;
+	padding:20px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.recipe-name  {
+	display:flex;
+	display:flex;
+	align-self: center;
+	margin-right: auto;
+	padding-left: 200px;
+}
+
+.recipe-name span {
+
+	font-size: 24px;
+	font-weight: 500 !important;
+	letter-spacing: 2px;
+	color:white;
+}
+
+.chevron{
+	display:flex;
+	align-items:center;
+	width:18px;
+	height:18px;
+	filter: invert(1);
+	
+}
+
+.recipe-title {
+	display:flex;
+	align-items:center;
+	padding-right: 200px;
+	font-size: 18px;
+	letter-spacing:2px;
+}
+
+
+
+main{
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+
+/* 🍝🍝🍝🍝🍝 ADDED CONTENT P3A*/
+
+.recipe-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 960px;
+	margin: auto;
+	font-family: sans-serif;
+	font-size: 16px;
+	list-style: none;
+}
+
+ /*LIGHT GREY CONTAINER*/
+.recipe-content {
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+	padding-left: 5px;
+	flex: 0 1 30%;
+
+}
+
+.recipe-details {
+	display: flex;
+	flex: 0 1 30%;
+	margin-left: 20px;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.pasta-img{
+	display:flex;
+	margin-bottom: 0px;
+}
+
+.tomato-name{
+	text-align: center;
+	color: #555;
+}
+
+.author-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 10px auto;
+	display: block;
+}
+
+.author-name{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+.tomato-lists{
+	display: flex;
+	align-self: flex-start;
+}
+
+
+.tomato-lists-quick {
+	margin-left: -20px !important;
+}
+
+.tomato-lists ul {
+	list-style: none;
+}
+
+.recipe-prep {
+	padding: 0;
+	flex: 0 1 30%;
+}
+
+.recipe-time{
+	padding: 0;
+	flex: 1;
+}
+
+.recipe-time::before{
+	margin-right: 2px;
+}
+
+.recipe-description {
+	margin-top: 10px;
+	color: #555;
+}
+
+.recipe-image {
+	width: 65%;
+	margin: 0px;
+}
+
+/* Ingredients & Instructions */
+.recipe-infobox {
+	display: flex;
+	border: dashed 1px #ddd; 
+	
+}
+.recipe-info{
+	display: flex;
+	color: #555;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 50px;
+	margin-bottom:70px; 
+
+}
+
+.ingredients-name, .instruction-name{
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding-left: 0px;
+}
+.instruction-name{
+	padding-left: 2px;
+}
+
+.ingredients-list{
+	list-style-type: none;
+	padding:0px;
+}
+
+.ingredients{
+	width: 40%;
+}
+
+.instructions{
+	width: 80%;
+}
+
+
+ul, ol {
+	padding-left: 20px;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+
+/*RATINGS 🔴🔴🔴🔴🔴*/
+
+.ratings{
+	background-color:firebrick;
+	color:#FFF;
+	padding: 0 0 0 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 960px;
+	margin: auto;
+}
+.ratings-location{
+	display:flex;
+	align-items:center;
+}
+.ratings-tags{
+	display:flex;
+	align-items:center;
+}
+.ratings-icon{
+	width:18px;
+	height:18px;
+	filter:invert(1);
+}
+.ratings ul{
+	display:flex;
+}
+.ratings li{
+	list-style:none;
+}
+.ratings li:not(:first-child)::before{
+	content:" | ";
+}
+.ratings-stars{
+	display:flex;
+	align-items:center;
+}
+
+.ratings-votes{
+	background-color:orangered;
+	padding:10px;
+	font-size:12px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.ratings-item .ratings-icon:first-of-type{
+	margin-right:5px;
+}
+
+/*RECOMMENDATIONS🦞🦞🦞🦞🦞*/
+
+.recommendations {
+    background-color: whitesmoke;
+    max-width: 960px;
+    margin: auto; 
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendation-title {
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 9pt;
+    text-align: center;
+    color: #555;
+}
+.rating-stars2{
+	display:flex;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+.recommendation-desc {
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 60px;
+    margin: 0px;
+}
+
+.recommendation-card {
+    background: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.text-container {
+    padding: 15px;
+}
+
+.food-name {
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top:10px;
+}
+
+.recommendation-star {
+	width:18px;
+	height:18px;
+	align-items: center;
+
+}
+
+.food-description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 2px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.rating {
+	background: olivedrab;
+    color: white;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.rating-text {
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+}
+
+
+/*FOOTER🦞🦞🦞🦞🦞*/
+
+footer {
+    background: #555;
+    padding-top: 40px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 960px;
+    margin: auto;
+}
+
+.footer-logo {
+	flex-frow: 1;
+	margin-right: 70px;
+}
+.kitchendepot-footer{
+	color: #DDD;
+	font-size: 14px;
+
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 10px;
+    padding-left: 50px; 
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.footer-info {
+    margin-left: -30px; 
+}
+
+.footer-logo img {
+    width: 110px;
+	height: 110px;
+	margin-bottom: 10px;
+}
+
+.footer-info {
+    list-style: none;
+    padding: 0;
+    color: #DDD;
+    font-size: 15px;
+}
+.footer-information {
+    list-style: none;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    color: #DDD;
+}
+
+.footer-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.footer-info img {
+    width: 16px;
+    height: 16px;
+    filter: invert(1);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 90px;
+    justify-content: space-between;
+    margin-left: 360px;
+}
+
+.footer-socials img {
+    width: 30px;
+    filter: invert(1);
+    opacity: 0.4;
+}
+
+#subfooter {
+    width: 100%;
+    overflow:hidden;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #999;
+    background:#333;
+}
+
+.subfooter-container {
+    width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subfooter1{
+    float: left;
+}
+
+.subfooter2{
+    float: right;
+}
+
+.subfooter1 p, .subfooter2 p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 360px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .org-name {
+        margin: 10px 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-item {
+        padding: 10px 0;
+    }
+
+    .recipe {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .recipe-name {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .recipe-title {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .recipe-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .recipe-image {
+        order: -1;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .recipe-infobox {
+        flex-direction: column;
+    }
+
+    .ingredients {
+        width: 100%;
+        margin: 10px 0;
+        order: -1;
+    }
+
+    .instructions {
+        width: 100%;
+        margin: 10px 0;
+        order: 0;
+    }
+
+    .ratings {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ratings-item {
+        margin: 10px 0;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info li {
+        justify-content: center;
+    }
+
+    .footer-socials {
+        margin-top: 20px;
+    }
+
+    .subfooter-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subfooter1, .subfooter2 {
+        float: none;
+        text-align: center;
+    }
+}
